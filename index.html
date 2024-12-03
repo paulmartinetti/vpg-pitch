@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracken Consultants, Services, and Therapeutic Areas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2.1.0/css/single/linkedin/linkedin.css">
+    <style>
+        .ha1,
+        .ha2,
+        .ha3 {
+            text-align: center;
+            font-size: 3rem;
+            font-family: Arial, sans-serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .ha2 {
+            font-size: 2rem;
+        }
+
+        .ha3 {
+            font-size: 1rem;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+        .ntabs {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Tab buttons */
+        .tab-buttons {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            background: #f4f4f4;
+        }
+
+        .tab-button,
+        .tab2-button {
+            flex: 1;
+            padding: 10px 15px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 16px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        .tab-button:hover,
+        .tab2-button:hover
+         {
+            background: #e0e0e0;
+        }
+
+        .tab-button.active,
+        .tab2-button.active {
+            background: #fff;
+            border-bottom: 3px solid #007BFF;
+            font-weight: bold;
+        }
+
+        /* Tab content */
+        .tab-content {
+            padding: 20px;
+        }
+
+        .tab-pane,
+        .tab2-pane {
+            display: none;
+        }
+
+        .tab-pane.active,
+        .tab2-pane.active {
+            display: block;
+        }
+
+        .video-container {
+            width: 440px;
+            /* Set desired width */
+            height: 640px;
+            /* Set desired height */
+            overflow: hidden;
+            /* Hide parts of the video outside this container */
+            position: relative;
+        }
+
+        video {
+            position: absolute;
+            bottom: 90px;
+            /* Adjust this value to crop from the top */
+            left: 0;
+            width: 100%;
+            /* Ensure the video fills the container horizontally */
+            height: auto;
+            /* Maintain the aspect ratio */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="ha1">Services</div>
+        <div class="ha2">We offer a comprehensive range of creative solutions tailored to meet your unique needs.</div>
+        <div class="columns">
+            <div class="column">
+                <img src="media/youth-empowerment.jpg" />
+                <div class="ha2">Youth Empowerment</div>
+                <div class="ha3">Empowering at-risk youth through education and training programs to help them achieve
+                    self-sufficiency and stability.</div>
+            </div>
+            <div class="column">
+                <img src="media/violence-reduction.jpg" />
+                <div class="ha2">Violence Reduction</div>
+                <div class="ha3">Offering opportunities for individuals to advance their careers and contribute to the
+                    digital economy, fostering economic growth.</div>
+            </div>
+            <div class="column">
+                <img src="media/inequity-reduction.jpg" />
+                <div class="ha2">Inequity Reduction</div>
+                <div class="ha3">Working towards reducing inequality by providing marginalized populations with the
+                    tools they need to succeed in the digital age.</div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="ha1">Empowering The Youth</div>
+        <div class="tabs is-centered tab-buttons">
+            <button class="tab-button active" data-tab="tab1">Girls Who Code</button>
+            <button class="tab-button" data-tab="tab2">Violence Prevention and Intervention Program</button>
+            <button class="tab-button" data-tab="tab3">Grow With Google, BreakBeatCode, Google CS First</button>
+            <button class="tab-button" data-tab="tab4">Video</button>
+        </div>
+        <div class="ntabs">
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="media/girls-who-code.jpg" />
+                        </div>
+                        <div class="column">
+                            <div class="ha3"><b>WHY:</b> We have Girls Who Code because diversity in the tech sector is
+                                crucial for innovation and progress. According to 2023 statics currently show that Black
+                                people make up 8% of the U.S. tech industry. And of the 8% of black people in the tech
+                                industry; Black women represent 3% and Hispanic women 1%. By empowering young women with
+                                tech skills, we bridge the gender gap and create a more inclusive and dynamic workforce
+                                that benefits everyone.</div>
+                            <div class="ha3">This free in-person club, Instructed by Alysia Smith, begins May 29, 2024 (
+                                grades 3-5) and June 5,2024 (grades 6-12). We encourage young women to join the Tech
+                                Sisterhood-Unite, Innovate, and Thrive.</div>
+                            <div class="ha3">Girls Who Code aims to empower young women by providing them with
+                                opportunities in the tech industry.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="media/violence-prevention-and-intervention-program.jpg" />
+                        </div>
+                        <div class="column">
+                            <div class="ha3">VPG was founded by Nyene, who had a turbulent past involving violence and
+                                crime. He wants to prevent others from making the same mistakes he did and teach them
+                                self-control. At the age of 17 Nyene had his first shoot out, by 20 he caught his first
+                                adult record selling drugs. By 26 Nyene had already experienced 4 attempts on my life,
+                                at age 30 he was arrested by the FBI and sentenced to 180 months in Federal Prison at
+                                the age of 31.</div>
+                            <div class="ha3"><b>Why:</b> Nyene wants to prevent others from making wrong decisions by
+                                teaching tools for self-control. The Violence Prevention and Intervention Program was
+                                formed because every person deserves the chance to learn from mistakes without enduring
+                                the same consequences. By teaching self-control and conflict resolution, we can break
+                                cycles of violence and create safer communities where individuals can thrive without
+                                resorting to harmful actions.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="media/learn-at-your-own-pace.png" /><br>
+                            <img src="media/put-your-skills-to-work.png" />
+                        </div>
+                        <div class="column">
+                            <div class="columns">
+                                <div class="column"><img src="media/breakbeat-code-hackathon.png" /></div>
+                                <div class="column"><img src="media/google-cs-first.png" /></div>
+                            </div>
+
+                            <div class="ha3"><b>Breakbeat Code:</b> Music creation to introduce young people to coding
+                                to coding, making technology accessible and engaging</div>
+                            <div class="ha3"><b>Google CS First</b> Foundational skills in computer science</div>
+                            <div class="box">
+                                <div class="ha2">These programs, initiated by Nyene Baker's personal experience, aim to
+                                    bring tech opportunities and training to underserved communities.</div>
+                            </div>
+                            <div class="ha3"><b>Why:</b> We believe that access to tech education and training should
+                                not be limited by socioeconomic status. By providing these opportunities, we empower
+                                individuals to advance their careers and contribute to the digital economy, fostering
+                                economic growth and reducing inequality. Currently, Hispanics make up 16.7% of the U.S
+                                workforce and about 8% of the tech industry and Blacks 14.3% of the workforce and only
+                                8% in the tech industry.</div>
+                            <img src="media/qualify-for-in-demand-jobs.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <div class="video-container">
+                        <video controls autoplay loop>
+                            <source src="media/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="ha1">Title Pending</div>
+        <div class="tabs is-centered tab-buttons">
+            <button class="tab2-button active" data-tab="tab5">N.E.R.D.S with Swag</button>
+            <button class="tab2-button" data-tab="tab6">Returning Citizens</button>
+            <button class="tab2-button" data-tab="tab7">Motivational Speaking</button>
+        </div>
+        <div class="ntabs">
+            <div class="tab-content">
+                <div class="tab2-pane active" id="tab5">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="media/nerds-with-swag.png" />
+                        </div>
+                        <div class="column">
+                            <div class="ha2">Never Ending Relentlessness Determines Success</div>
+                            <div class="ha3">Nyene Baker created Nerds With Swag which is the N.E.R.D.S acronym for the title above. These initiatives aim to empower youth and adults in underserved communities worldwide to embrace their nerdy passions with confidence, the initiative promotes pride in intellectual pursuits and idealizes positive achievements like learning tech over illegal activities.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab2-pane" id="tab6">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="media/returning-citizens-motivation-101-2024.jpg" />
+                        </div>
+                        <div class="column">
+                            <div class="ha2">This program, created by Nyene Baker after facing challenges reintegrating into society post-prison, offers support and resources to individuals transitioning from incarceration.</div>
+                            <div class="ha3"><b>Why:</b> We understand the challenges returning citizens face and the importance of support in rebuilding their lives. By offering hope, motivation, and resources, we empower individuals to overcome obstacles and become productive members of society, reducing recidivism and promoting rehabilitation.</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="tab2-pane" id="tab7">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="media/motivational-speaking-unlock-your-potential.jpg" />
+                        </div>
+                        <div class="column">
+                            <div class="ha2">Unlock Your Potential</div>
+                            <div class="ha3">Nyene Baker is an in-demand speaker for keynote events. He have addressed audiences from all walks of life in the past 3 years. Spreading his message of determination and joy to businesses ,schools, charitable institutions, and gatherings of individuals.</div>
+                            <div class="ha3">With his history of overcoming adversity and rising to the pinnacle of respect and personal success he can identify with all challenges and goals presented by any audience.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="ha1">Inequity Reduction</div>
+        <div class="columns">
+            <div class="column">
+                <div class="ha2">VPG advocates for social justice and equity issues, focusing on mental health, criminal justice reform, and expungement laws.</div>
+                <div class="ha3"><b>Why:</b> We advocate for public policy because systemic change is necessary to address underlying issues and create a fair and just society. By advocating for reforms in mental health, criminal justice, and expungement laws, we strive to create a more equitable and compassionate system that uplifts communities and promotes healing and rehabilitation over punishment.</div>
+            </div>
+            <div class="column">
+                <img src="media/inequity-reduction-nyene-baker.jpg" />
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tab2Buttons = document.querySelectorAll('.tab2-button');
+
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            const tab2Panes = document.querySelectorAll('.tab2-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active classes
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding tab pane
+                    button.classList.add('active');
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            tab2Buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active classes
+                    tab2Buttons.forEach(btn => btn.classList.remove('active'));
+                    tab2Panes.forEach(pane => pane.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding tab pane
+                    button.classList.add('active');
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
