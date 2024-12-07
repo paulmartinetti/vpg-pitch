@@ -11,6 +11,7 @@
             background-color: black;
             color: #ddd;
         }
+
         .ha1,
         .ha2,
         .ha3 {
@@ -40,43 +41,56 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            padding: 20px;
         }
 
         /* Tab buttons */
         .tab-buttons {
             display: flex;
-            border-bottom: 1px solid #ddd;
-            background: #f4f4f4;
-            border-radius: 7px;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Center the buttons */
+            gap: 10px;
+            /* Add spacing between buttons */
+            margin-bottom: 20px;
         }
 
         .tab-button,
         .tab2-button,
         .tab3-button {
-            flex: 1;
-            padding: 10px 15px;
-            text-align: center;
+            padding: 10px 20px;
+            /* Button padding */
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            /* Rounded corners */
+            background: #fff;
+            color: #007BFF;
             cursor: pointer;
-            border: none;
-            background: none;
             font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            /* Center-align text inside the button */
+            white-space: normal;
+            /* Allow text to wrap to the next line */
+            word-wrap: break-word;
+            /* Break long words if needed */
             outline: none;
-            transition: background 0.3s;
+            transition: background 0.3s, color 0.3s;
+            max-width: 200px;
         }
 
         .tab-button:hover,
         .tab2-button:hover,
         .tab3-button:hover {
-            background: #e0e0e0;
+            background: #007BFF;
+            color: #fff;
         }
 
         .tab-button.active,
         .tab2-button.active,
         .tab3-button.active {
-            background: #fff;
-            border-bottom: 3px solid #007BFF;
-            font-weight: bold;
+            background: #007BFF;
+            color: #fff;
         }
 
         /* Tab content */
